@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(235, 21%, 11%);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.contents-container{
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 750px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-header{
+    width: 100%;
+    height: 190px;
+    padding: 20px;
+}
+
+.header-contents{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-contents h1{
+    color: #fff;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+}
+
+.add-todo-container{
+    position: relative;
+}
+
+.add-todo-input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0px 100px 0px 10px;
+    background-color: hsl(235, 24%, 19%);
+    box-shadow: 0 6.1px 15.4px rgba(0, 0, 0, 0.024), 0 20.3px 51.6px rgba(0, 0, 0, 0.036), 0 91px 231px rgba(0, 0, 0, 0.06);
+}
+
+.add-todo-input::placeholder{
+    color: hsl(233, 14%, 35%);
+}
+
+.add-todo-button{
+    position: absolute;
+    font-size: 12px;
+    padding: 10px;
+    height: 100%;
+    width: 90px;
+    right: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    background-color:#34354d;
+    color: hsl(234, 39%, 85%);
+    transition: all 0.2s ease-out;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.add-todo-button:hover{
+    background-color: #2e2f47;
+}
+
+.todos-container{
+    width: 100%;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.todos-contents{
+    width: 100%;
+    height: 100%;
+}
+
+.todo-bg{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 0px 0px 0px 10px;
+    background-color:hsl(0, 0%, 98%);
+    box-shadow: 0 6.1px 15.4px rgba(0, 0, 0, 0.024), 0 20.3px 51.6px rgba(0, 0, 0, 0.036), 0 91px 231px rgba(0, 0, 0, 0.06);
+}
+
+.todo-bg-contents{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todo-text{
+    cursor: context-menu;
+    color: hsl(235, 21%, 11%);
+}
+
+.delete-todo-button{
+    position: absolute;
+    font-size: 12px;
+    padding: 10px;
+    height: 50px;
+    width: 90px;
+    right: 0;
+    border: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    background-color:hsl(220, 98%, 61%);
+    transition: all 0.2s ease-out;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.delete-todo-button:hover{
+    background-color: #2e68db;
+}
